@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="submit.css">
+  <link rel="stylesheet" href="survey.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Survey Form HTML & CSS</title>
+</head>
+
+<body style="background-color: rgb(205, 205, 205);">
+  <div class="flex flex-col items-center p-6 max-w-xl mx-auto text-center">
+    <h1 class="text-2xl md:text-3xl font-medium" style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(248, 182, 134);">DevCamp Survey Form</h1>
+    <h2 class="text-sm md:text-lg italic mt-2" style="color: black; font-family: Georgia, 'Times New Roman', Times, serif;"">Thank you for taking the time to help us improve the platform</h2>
+  </div>
+  <form class="bg-indigo-900 p-10 mb-20 max-w-xl mx-auto">
+    <div class="flex flex-col">
+      <label class="mt-4 font-medium">Name</label>
+      <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" placeholder="Enter your name" type="text" required />
+    </div>
+    <div class="flex flex-col">
+      <label class="mt-4 font-medium">Email</label>
+      <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" placeholder="Enter your email" type="email" required />
+    </div>
+    <div class="flex flex-col">
+      <label class="mt-4 font-medium">Age (optional)</label>
+      <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" placeholder="Age" type="number" />
+    </div>
+    <div class="flex flex-col">
+      <label class="mt-4 font-medium">Which option best describes your current role?</label>
+      <select class="p-2.5 text-gray-900 mt-1 rounded text-sm">
+        <option disabled selected>Select current role</option>
+        <option>Student</option>
+        <option>Full Time</option>
+        <option>Part Time</option>
+        <option>Intership</option>
+        <option>Others</option>
+      </select>
+    </div>
+    <div class="flex flex-col">
+      <label class="mt-4 font-medium">Would you recommend DevCamp to a friend?</label>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="radio" name="recommend" id="definitely" />
+        <label for="definitely">Definitely</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="radio" name="recommend" id="maybe" />
+        <label for="maybe">Maybe</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="radio" name="recommend" id="not-sure" />
+        <label for="not-sure">Not sure</label>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label class="mt-4 font-medium">What is your favorite feature of DevCamp?</label>
+      <select class="p-2.5 text-gray-900 mt-1 rounded text-sm">
+        <option disabled selected>Select an option</option>
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Open Source</option>
+      </select>
+    </div>
+    <div class="flex flex-col">
+      <label class="mt-4 font-medium">What would you like to see improved? (Check all that apply)</label>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement"
+          id="Front-end Projects" />
+        <label for="Front-end Projects">Front-end Projects</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement"
+          id="Back-end Projects" />
+        <label for="Back-end Projects">Back-end Projects</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement"
+          id="Data Visualization" />
+        <label for="Data Visualization">Data Visualization</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement" id="Challenges" />
+        <label for="Challenges">Challenges</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement"
+          id="Open Source Community" />
+        <label for="Open Source Community">Open Source Community</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement"
+          id="Gitter help rooms" />
+        <label for="Gitter help rooms">Gitter help rooms</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement" id="Videos" />
+        <label for="Videos">Videos</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement" id="City Meetups" />
+        <label for="City Meetups">City Meetups</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement" id="Wiki" />
+        <label for="Wiki">Wiki</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement" id="Forum" />
+        <label for="Forum">Forum</label>
+      </div>
+      <div>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" type="checkbox" name="improvement"
+          id="Additional Courses" />
+        <label for="Additional Courses">Additional Courses</label>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label class="mt-4 font-medium">Any comments or suggestions?</label>
+      <textarea class="p-2.5 text-gray-900 mt-1 rounded text-sm min-h-[120px]"
+        placeholder="Enter your comments here..."></textarea>
+    </div>
+    <br>
+    <!-- <a href="submit.html"><button class="w-full bg-emerald-500 mt-4 p-2.5 text-sm font-medium hover:bg-orange-500 active:bg-orange-400">Submit</button></a> -->
+    <!-- <button class="w-full bg-emerald-500 mt-4 p-2.5 text-sm font-medium hover:bg-orange-500 active:bg-orange-400" href="submit.html">Submit</button> -->
+    <!-- <a href="submit.html" class="submit">Submit</a> -->
+    <div class="container">
+      <button type="submit" onclick="openPopup()" style="color: black; font-size: 30px;"> Submit </button>
+      <div class="popup" id="popup">
+          <img src="img.png">
+          <h2>Thank You!</h2>
+          <p>Your Details has been successfully submitted. Thanks!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+      </div>
+  </div>
+
+  <!-- <a href="submit.html" style=" background-color:#6fd649; font-size: 30px;" class="submit"><input type="submit" value="Submit"></a> -->
+  </div>
+  </form>
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+</body>
+
+</html>
